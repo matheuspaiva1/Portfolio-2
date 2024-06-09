@@ -27,7 +27,7 @@ img {
 }
 
 .card {
-  background: url('/imgs/pixel market.png');
+  background: url('pixel market.png');
 
   min-width: 70px;
   height: 100%;
@@ -45,19 +45,19 @@ img {
 }
 
 .card:nth-child(2){
-  background: url('/imgs/app cart.png');
+  background: url('app cart.png');
 }
 
 .card:nth-child(3){
-  background: url('/imgs/bikcraft.png');
+  background: url('bikcraft.png');
 }
 
 .card:nth-child(4){
-  background: url('/imgs/gerenc prod.png');
+  background: url('gerenc prod.png');
 }
 
 .card:nth-child(5){
-  background: url('/imgs/Captura\ de\ tela\ 2024-04-01\ 223504.png');
+  background: url('Captura\ de\ tela\ 2024-04-01\ 223504.png');
 }
 /* .card.active {
   flex-grow: 100;
