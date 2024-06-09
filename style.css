@@ -1,0 +1,270 @@
+@font-face {
+  font-family: 'SF Pro Bold';
+  src: url(/fontes/sf-pro-display/SFPRODISPLAYBOLD.OTF);
+}
+
+@font-face {
+  font-family: 'SF Pro';
+  src: url(/fontes/sf-pro-display/SFPRODISPLAYREGULAR.OTF);
+}
+
+@font-face {
+  font-family: 'SF Pro thin';
+  src: url(/fontes/sf-pro-display/SFPRODISPLAYTHINITALIC.OTF);
+}
+
+@font-face {
+  font-family: 'SF Pro ultralight';
+  src: url(/fontes/sf-pro-display/SFPRODISPLAYULTRALIGHTITALIC.OTF);
+}
+
+
+@font-face {
+  font-family: 'SF Pro lightitalic';
+  src: url(/fontes/sf-pro-display/SFPRODISPLAYLIGHTITALIC.OTF);
+}
+
+@font-face {
+  font-family: 'SF Compact';
+  src: url(/fontes/sf-compact-display-cufonfonts/sf-compact-display-thin-58646eb43a785.otf);
+}
+
+
+* {
+  background: #070707;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'SF Pro Bold', sans-serif;
+}
+
+h3 {
+  font-family: 'SF Pro ultralight';
+  color: #d3d2d2;
+}
+
+p {
+  font-family: 'SF Pro ultralight';
+}
+
+span {
+  font-family: 'SF Pro';
+}
+
+section p {
+  font-family: 'SF Pro'
+}
+
+h2 {
+  font-family: 'SF Pro lightitalic';
+}
+
+
+
+/* HEADER */
+header a {
+  color: #d3d2d2;
+  font-family: 'SF Compact';
+  text-decoration: none;
+  position: relative;
+}
+
+header li a::after {
+  content: '';
+  width: 0px;
+  height: 4px;
+  background-image: linear-gradient(45deg, #ececec, #919191);
+  position: absolute;
+  top: 25px;
+  left: 0;
+  transition: width 0.5s;
+}
+
+header li a:hover::after{
+  width: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.5em;
+  box-shadow: 0px 0 20px 0 rgba(56, 56, 56, 0.158);
+  
+  max-width: 100%;
+  position: relative;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 6.8em;
+  margin: 0 5em 0 26em ;
+}
+
+li{
+  list-style-type: none;
+}
+
+
+/* MAIN */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+main h1 {
+  font-size: 52px;
+}
+main h3 {
+  font-size: 24px;
+  color: #adadad;
+  margin-bottom: 2em;
+}
+main p {
+  font-family: 'SF Pro ultralight';
+  font-size: 36px;
+  color: #797979;
+
+  width: 8.4em;
+}
+
+main span {
+  font-family: 'SF Pro thin';
+}
+
+main strong {
+  font-size: 20px;
+  margin: 0 0 0 8em;
+}
+
+main section:first-child {
+  padding: 1.5em 0 0 4.5em;
+}
+
+main section img {
+  width: 600px;
+  height: 460px;
+}
+
+/* HABILIDADES */
+
+.title-hab {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.scroll-habs{
+  height: 58vh;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-hab {
+  overflow: hidden;
+}
+
+.scroller{ 
+  display: flex;
+  gap: 10px;
+  animation: scroll 12s linear infinite;
+  animation-delay: calc(25/-1);
+}
+
+.scroller:nth-child(2){
+  animation: scroll 12s linear infinite;
+  animation-delay: calc(25/-2);
+}
+
+.item {
+  font-family: 'SF Pro Bold';
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight:500;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%)
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+/* SOBRE */
+.sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 31em;
+}
+.sobre p{
+  text-align: justify;
+  width: 27em;
+}
+.title-sobre{
+  padding: 0.3em 0 0 1em ;
+  font-size: 52px;
+}
+
+aside img{
+  height: 330px;
+  margin-bottom: 50px;
+}
+
+/* Projetos */
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+}
+
+footer .email {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+footer .footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 25em;
+  padding: 1em;
+
+  box-shadow: 0 -4px 10px rgba(56, 56, 56, 0.158);
+  width: 100%;
+
+}
+.links {
+  display: flex;
+  gap: 1.5em;
+  
+}
+
+
